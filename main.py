@@ -769,7 +769,7 @@ def main(page: ft.Page):
     footer = ft.Container(
         padding=30,
         alignment=ft.Alignment.CENTER,
-        content=ft.Text("(c) 2026 Simao Korea Portfolio - All Rights Reserved", color=subtext),
+        content=ft.Text("(c) 2026 Simao Korea - Portfolio - All Rights Reserved", color=subtext),
     )
 
     # ─────────────────────────────────────────────
