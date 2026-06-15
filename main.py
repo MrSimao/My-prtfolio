@@ -16,7 +16,7 @@ def load_image_base64(path: str) -> str:
     if os.path.exists(abs_path):
         with open(abs_path, "rb") as f:
             return base64.b64encode(f.read()).decode("utf-8")
-    return ""
+    return "SuperK"
 
 # ─────────────────────────────────────────────
 # MAIN APPLICATION SETUP
