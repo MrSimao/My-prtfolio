@@ -136,11 +136,11 @@ def main(page: ft.Page):
             "tag": "Onramp",
         },
         {
-            "title": "Core MATLAB Skills",
-            "date": "-",
-            "description": "Completed the full Core MATLAB Skills learning path (4 courses).",
-            "image_path": "assets/core_matlab.jpg",
-            "tag": "Learning Path",
+            "title": "Circuit Simulation onramp",
+            "date": "16 June 2026",
+            "description": "Completed the Circuit Simulation onramp.",
+            "image_path": "assets/circuit simulation onramp.jpg",
+            "tag": "Onramp",
         },
         {
             "title": "MATLAB Desktop Tools",
@@ -415,7 +415,7 @@ def main(page: ft.Page):
                 ft.Column(col={"md": 3, "sm": 6, "xs": 12}, controls=[stat_card("1",  "Project")]),
                 ft.Column(col={"md": 3, "sm": 6, "xs": 12}, controls=[stat_card("20", "Commits")]),
                 ft.Column(col={"md": 3, "sm": 6, "xs": 12}, controls=[stat_card("1000+",  "Lines of Code")]),
-                ft.Column(col={"md": 3, "sm": 6, "xs": 12}, controls=[stat_card("5",   "Certificates")]),
+                ft.Column(col={"md": 3, "sm": 6, "xs": 12}, controls=[stat_card("6",   "Certificates")]),
             ],
         ),
     )
@@ -477,7 +477,7 @@ def main(page: ft.Page):
                     "All MathWorks certificates earned by Simao Korea— click any card to view the full certificate.",
                     size=16, color=subtext,
                 ),
-                # Row 1 — Onramps (3 cards)
+                # Row 1 — Onramps (4 cards)
                 ft.Text("Onramp Certificates", size=20, weight=ft.FontWeight.BOLD, color=primary),
                 ft.ResponsiveRow(
                     run_spacing=20,
@@ -485,6 +485,7 @@ def main(page: ft.Page):
                         ft.Column(col={"md": 4, "sm": 6, "xs": 12}, controls=[cert_card(certificates[0])]),
                         ft.Column(col={"md": 4, "sm": 6, "xs": 12}, controls=[cert_card(certificates[1])]),
                         ft.Column(col={"md": 4, "sm": 6, "xs": 12}, controls=[cert_card(certificates[2])]),
+                        ft.Column(col={"md": 4, "sm": 6, "xs": 12}, controls=[cert_card(certificates[3])]),
                     ],
                 ),
                 # Row 2 — Learning path + individual courses (5 cards)
@@ -492,7 +493,6 @@ def main(page: ft.Page):
                 ft.ResponsiveRow(
                     run_spacing=20,
                     controls=[
-                        ft.Column(col={"md": 4, "sm": 6, "xs": 12}, controls=[cert_card(certificates[3])]),
                         ft.Column(col={"md": 4, "sm": 6, "xs": 12}, controls=[cert_card(certificates[4])]),
                         ft.Column(col={"md": 4, "sm": 6, "xs": 12}, controls=[cert_card(certificates[5])]),
                         ft.Column(col={"md": 4, "sm": 6, "xs": 12}, controls=[cert_card(certificates[6])]),
