@@ -22,18 +22,18 @@ def load_image_base64(path: str) -> str:
 # MAIN APPLICATION SETUP
 # ─────────────────────────────────────────────
 def main(page: ft.Page):
-    # Put this right under your color variables
+    
     video_url = "https://drive.google.com/file/d/1SnaRFN1_aPPfDyMxYvHkfg8JG1_19Jpq/view?usp=drive_link"
     page.clean()
     page.title = "Simao Korea | Engineering Portfolio"
     page.theme_mode = ft.ThemeMode.DARK
-    page.bgcolor = "#0d0221"  # Charcoal-Navy
+    page.bgcolor = "#0d0221" 
     page.scroll = ft.ScrollMode.AUTO
     page.padding = 0
 
     # Professional Palette
-    primary   = "#E97A34"  # OreGuide Orange
-    secondary = "#4A1D96"  # Deep Purple
+    primary   = "#E97A34"  
+    secondary = "#4A1D96"  
     card      = "#1B0A3A"
     panel     = "#12032C"
     text      = "#FFFFFF"
@@ -106,12 +106,11 @@ def main(page: ft.Page):
             ),
         )
 
-    # Example render call (placeholder for your page structure)
+    
     page.add(section_title("Overview", "My Engineering Journey"))
 
     # ─────────────────────────────────────────────
-    # ALL 8 CERTIFICATES
-    # image_path points to the PNG file next to main.py
+    # ALL 6 CERTIFICATES
     # ─────────────────────────────────────────────
     certificates = [
         {
@@ -212,7 +211,7 @@ def main(page: ft.Page):
             height=470,
             alignment=ft.Alignment.CENTER,
             content=ft.Image(
-                src=f"data:image/png;base64,{b64}",  # ✅ data URI works in all versions
+                src=f"data:image/png;base64,{b64}",  
                 fit=ft.BoxFit.CONTAIN,
                 width=680,
                 height=460,
@@ -380,7 +379,7 @@ def main(page: ft.Page):
                     col={"md": 6, "sm": 12, "xs": 12},
                     controls=[
                         ft.Image(
-    src="team1.jpeg",  # Flet looks in your /assets folder automatically
+    src="team1.jpeg",  
     border_radius=12, 
     fit=ft.BoxFit.COVER, 
     height=360, 
@@ -477,7 +476,7 @@ def main(page: ft.Page):
                     "All MathWorks certificates earned by Simao Korea— click any card to view the full certificate.",
                     size=16, color=subtext,
                 ),
-                # Row 1 — Onramps (4 cards)
+                
                 ft.Text("Onramp Certificates", size=20, weight=ft.FontWeight.BOLD, color=primary),
                 ft.ResponsiveRow(
                     run_spacing=20,
@@ -488,7 +487,7 @@ def main(page: ft.Page):
                         ft.Column(col={"md": 4, "sm": 6, "xs": 12}, controls=[cert_card(certificates[3])]),
                     ],
                 ),
-                # Row 2 — Learning path + individual courses (5 cards)
+               
                 ft.Text("Core MATLAB Skills — Learning Path & Courses", size=20, weight=ft.FontWeight.BOLD, color=primary),
                 ft.ResponsiveRow(
                     run_spacing=20,
@@ -526,7 +525,7 @@ def main(page: ft.Page):
                 ft.Text("Confidence in Concepts — written technical explanations with video inserts.",
                         size=16, color=subtext),
 
-                # Post: Semester Project Reflection
+               
                 ft.Container(
                     bgcolor=card,
                     border_radius=12,
@@ -540,7 +539,7 @@ def main(page: ft.Page):
                             ft.Text("In this reflection video, I discuss my contributions to the OreGuide project...", size=15, color=subtext),
                             ft.Image(src="favicon.png", width=640, height=360, fit=ft.BoxFit.COVER, border_radius=12),
                             
-                            # Watch Video Button
+                           
                            ft.ElevatedButton(
                                 content="▶ Watch Reflection Video",
                                 on_click=open_video,
@@ -555,7 +554,7 @@ def main(page: ft.Page):
                     ),
                 ),
 
-                # Mathematical Notation
+                
                 ft.Container(
                     bgcolor=card,
                     padding=28,
@@ -631,7 +630,7 @@ def main(page: ft.Page):
                     size=16, color=subtext,
                 ),
 
-                # ── Profile Card ──
+               
                 ft.Container(
                     bgcolor=card,
                     border_radius=12,
@@ -715,7 +714,7 @@ def main(page: ft.Page):
                     ),
                 ),
 
-                # ── Impact Summary ──
+                
                 ft.Text("Project Contribution: Collaborative UI Design & Dev", size=20, weight=ft.FontWeight.BOLD, color=primary),
                 ft.Container(
                     bgcolor=card,
